@@ -8,4 +8,4 @@
 # License: GPLv3
 #=============================================================================
 
-nvr --servername /tmp/spacevim_nvim_server --remote $@
+nvr -s --servername "${NVIM_LISTEN_ADDRESS:-/tmp/spacevim_nvim_server}" --remote "$@"
